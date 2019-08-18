@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundDefault">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/lContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/ini_calendar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:paddingLeft="16dp"
+                android:text="TextView"
+                android:textColor="@color/textDefault"
+                android:textSize="20sp" />
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                android:id="@+id/lCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_margin="4dp"
+                app:compactCalendarBackgroundColor="@color/BackgroundDefault"
+                app:compactCalendarCurrentDayBackgroundColor="@color/color00"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/menuButtonPressed"
+                app:compactCalendarMultiEventIndicatorColor="@color/textInterative"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextColor="@color/textDefault"
+                app:compactCalendarTextSize="14sp" />
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lContainer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layoutAnimation="@anim/layout_list_top_to_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

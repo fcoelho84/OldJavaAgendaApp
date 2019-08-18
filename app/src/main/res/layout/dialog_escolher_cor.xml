@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    app:cardBackgroundColor="@color/BackgroundDefault"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundDefault">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/color01"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/color01"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/color05"
+            app:layout_constraintEnd_toStartOf="@+id/color02"
+            app:layout_constraintStart_toEndOf="@+id/color00"
+            app:layout_constraintTop_toBottomOf="@+id/container" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/color08"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/color08"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/color07"
+            app:layout_constraintTop_toBottomOf="@+id/color03" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/color04"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/color04"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/color05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color00" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/color06"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/color06"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/color07"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/color07"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/color08"
+            app:layout_constraintStart_toEndOf="@+id/color05"
+            app:layout_constraintTop_toBottomOf="@+id/color02" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/color03"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/color03"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/color02"
+            app:layout_constraintTop_toBottomOf="@+id/container" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/color05"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/color05"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/color07"
+            app:layout_constraintStart_toEndOf="@+id/color04"
+            app:layout_constraintTop_toBottomOf="@+id/color01" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/color02"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/color02"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/color03"
+            app:layout_constraintStart_toEndOf="@+id/color01"
+            app:layout_constraintTop_toBottomOf="@+id/container" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/color00"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/color00"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/color04"
+            app:layout_constraintEnd_toStartOf="@+id/color01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container" />
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/BackgroundDestaque"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/dBtnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/icon_close_black"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:text="@string/dialog_setcolor_title"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="8dp" />
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
+

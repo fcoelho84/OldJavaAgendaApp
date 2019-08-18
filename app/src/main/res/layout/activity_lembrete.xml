@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundDefault">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MenuFloatingBottun.Activity_lembrete">
+
+        <RelativeLayout
+            android:id="@+id/containerTitle"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="@color/BackgroundDestaque"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/btn_return"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/icon_arrow_left"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="366dp" />
+
+                <TextView
+                    android:id="@+id/lembrete_activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/lembrete_title_activity"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/aux"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/lembrete_btn_trash"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/aux"
+                    android:src="@drawable/icon_trash_black" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:background="@android:color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/container_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/edittext_underline"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/container_tag"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/lembrete_btn_title"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/icon_reminder" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/lembrete_layout_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <EditText
+                            android:id="@+id/lembrete_text_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="@string/lembrete_title_hint"
+                            android:inputType="text"
+                            android:maxLength="90"
+                            android:textColor="@color/textDefault"
+                            android:textColorHint="@color/textHint"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_clock"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edittext_underline"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/container_alarm"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/container_tag">
+
+                    <ImageView
+                        android:id="@+id/lembrete_btn_clock"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/icon_clock" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/lembrete_layout_clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/lembrete_text_clock"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:background="@null"
+                            android:editable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/lembrete_date_hint"
+                            android:textColor="@color/textDefault"
+                            android:textColorHint="@color/textHint"
+                            android:textSize="16sp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/container_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edittext_underline"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/container_clock"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/container_title">
+
+                    <ImageView
+                        android:id="@+id/lembrete_btn_listTag"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/icon_tags" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/lembrete_layout_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <EditText
+                            android:id="@+id/lembrete_text_tag"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="@string/lembrete_tag_hint"
+                            android:inputType="text"
+                            android:maxLength="12"
+                            android:textColor="@color/textDefault"
+                            android:textColorHint="@color/textHint"
+                            android:textSize="16sp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_alarm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edittext_underline"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/container_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/container_clock">
+
+                    <ImageView
+                        android:id="@+id/lembrete_btn_alarm"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/icon_notification" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/lembrete_layout_alarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/lembrete_text_alarm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:background="@null"
+                            android:editable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/lembrete_alarm_hint"
+                            android:textColor="@color/textDefault"
+                            android:textColorHint="@color/textHint"
+                            android:textSize="16sp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edittext_underline"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/container_anex"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/container_alarm">
+
+                    <ImageView
+                        android:id="@+id/lembrete_btn_color"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/icon_pallete" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/lembrete_layout_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <EditText
+                            android:id="@+id/lembrete_text_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:background="@null"
+                            android:editable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/lembrete_cor_hint"
+                            android:textColor="@color/textDefault"
+                            android:textColorHint="@color/textHint"
+                            android:textSize="16sp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_anex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edittext_underline"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/lembrete_btn_add_edit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/container_color">
+
+                    <ImageView
+                        android:id="@+id/lembrete_btn_anex"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/icon_lembrete_anex" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/lembrete_layout_anex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <EditText
+                            android:id="@+id/lembrete_text_anex"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:background="@null"
+                            android:editable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/lembrete_anex_hint"
+                            android:textColor="@color/textDefault"
+                            android:textColorHint="@color/textHint"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/lembrete_btn_add_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/btn_click_effect"
+                    android:padding="8dp"
+                    android:text="@string/lembrete_btn_add_edit"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/container_anex" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/lembrete_anex_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <TextView
+            android:id="@+id/lembrete_alarm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <TextView
+            android:id="@+id/lembrete_alarm_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="232dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#235590</color>
+    <color name="colorPrimary">#3670b9</color>
+    <color name="colorAccent">#376fbc</color>
+
+    <color name="textDefault">#a0a0b4</color>
+    <color name="textHint">#b9bed2</color>
+    <color name="textInterative">#0097e6</color>
+
+    <color name="BackgroundDefault">#f9f9f9</color>
+    <color name="BackgroundDestaque">#a7b9cd</color>
+    <color name="focused">#f4f6f9</color>
+
+    <color name="menuButtonNormal">#eeeeee</color>
+    <color name="menuButtonPressed">#cccccc</color>
+
+    <!-- Preferências de Cores (Anotações/Lembretes) -->
+    <color name="color00">#dfe6e9</color>
+    <color name="color01">#55efc4</color>
+    <color name="color02">#3ae374</color>
+    <color name="color03">#74b9ff</color>
+    <color name="color04">#a29bfe</color>
+    <color name="color05">#ffeaa7</color>
+    <color name="color06">#e17055</color>
+    <color name="color07">#fd79a8</color>
+    <color name="color08">#ff4d4d</color>
+
+
+
+
+
+
+
+
+
+
+</resources>

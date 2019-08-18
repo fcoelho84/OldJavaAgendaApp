@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NT Agenda</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_title">NT sua agenda pessoal !</string>
+    <string name="email" translatable="false">fcoelhodev@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Botão Menu Flutuante Titulos -->
+    <string name="titleAnotacao">Adicionar Anotação</string>
+    <string name="titleLembrete">Adicionar Lembrete</string>
+    <string name="titleLembreteConfig">Editar Preferências</string>
+
+    <!-- Activity Adição/Edição de Anotações -->
+    <string name="title_activity_anotacoes">Anotações</string>
+    <string name="anotação_title_hint">Coloque alguma anotação</string>
+
+    <!-- Activity Adição/Edição de Lembretes -->
+    <string name="title_activity_lembrete">Lembretes</string>
+    <string name="lembrete_title_activity">Adicionar Lembrete</string>
+    <string name="lembrete_btn_arrow_content_desc">Voltar</string>
+    <!-- Containers de input -->
+    <string name="lembrete_title_hint">Nome (ou breve bescrição)</string>
+    <string name="lembrete_tag_hint">Tag</string>
+    <string name="lembrete_date_hint">Data</string>
+    <string name="lembrete_hora_hint">Hora</string>
+    <string name="lembrete_anex_hint">Vincular uma Anotação</string>
+    <string name="lembrete_cor_hint">Cores</string>
+    <string name="lembrete_alarm_hint">Alarme</string>
+    <!-- Botão de adição e edição -->
+    <string name="lembrete_btn_add_edit">Adicionar</string>
+    <string name="lembrete_btn_edit">Editar</string>
+
+    <!-- Icones publicos -->
+    <string name="icon_close">Fechar</string>
+
+    <!-- Frag Inicio -->
+    <string name="Inicio_title_list_dynamic">Nas proximidades</string>
+    <string name="Inicio_title_total">Total:</string>
+    <string name="ini_tab_lembrete">Lembretes</string>
+    <string name="ini_tab_anotacao">Anotações</string>
+    <string name="ini_tab_calendario">Calendário</string>
+
+    <!-- Frag Minhas Tags -->
+    <string name="tags_addtag_title">Adicionar Tag</string>
+    <string name="tags_remove_title">Apagar todas as tags</string>
+    <string name="tags_slot_title">Recompensas</string>
+    <string name="tags_slot_desc">Assista alguns videos e ganhe mais espaços para novas tags!</string>
+    <string name="tags_slot_btn">Assistir</string>
+    <string name="tags_slot_btn_full">Ajudar</string>
+    <string name="tags_slot__desc_full">Você já recebeu todas as recompensas! Ajude-nos e ganhe mais vantagens como agradecimento</string>
+
+    <!-- Frag sobre -->
+    <string name="frag_sobre_history">Aplicativo iniciado em março de 2018 com o intuito de auxiliar as suas tarefas dia-a-dia. Focado em dar uma acessibilidade rápida,pratica e dinamica as suas tarefas que foram classificadas como: lembretes e anotações, pelo NT Agenda. Esperamos ter ajudado você com esse aplicativo :D!</string>
+    <string name="frag_sobre_versao">Versão</string>
+    <string name="frag_sobre_contato">Contato</string>
+
+    <!-- Frag Configurações-->
+    <string name="config_stiwtch_lembrete">Remover lista de lembretes do \"Inicio\"</string>
+    <string name="config_stiwtch_lcalendar">Remover calendário de lembretes do \"Inicio\"</string>
+    <string name="config_stiwtch_note">Remover anotações de lembretes do \"Inicio\"</string>
+    <string name="config_reset_db">Resetar NT</string>
+    <string name="config_custom_ini_title">Customizar Iniciar</string>
+    <string name="config_data_title">Apagar dados</string>
+    <string name="config_data_old_lembretes">Apagar meus lembretes antigos</string>
+    <string name="config_data_note">Apagar minhas anotações</string>
+
+    <!-- Frag Doação-->
+    <string name="help_title">Ajude o NT a Crescer !</string>
+    <string name="help_desc">Ajude-nos a manter o NT cada vez melhor :D. Faça uma doação e receba recompensa como uma forma de agradecimento da equipe de desenvolvimento do NT !</string>
+    <string name="help_desc2">Esssas são as recompensas que você ganhara da equipe NT:</string>
+    <string name="help_reward_color">Mais de 200 cores para colocar em seus lembretes e anotações.</string>
+    <string name="help_reward_query">Adicionar filtro as suas busca por lembretes e anotações.</string>
+    <string name="help_reward_tags">Adicionar cores como filtro em \"Minhas Tags\" em vez de somente tags.</string>
+    <string name="help_reward_more">E muito mais!</string>
+    <string name="help_btn">Pegar recompensas</string>
+
+    <!-- Menssagens de Erro e Avisos-->
+    <string name="noResultCalendar">Não foi encontrado nenhum lembrete para esse dia.</string>
+    <string name="erroAnexoNulo">Não ha anexos aqui !</string>
+    <string name="erroCampoNulo">Insira mais informações !</string>
+    <string name="erroMaxTags">Você atingiu o máximo de tags criadas !</string>
+    <string name="reloadApp">Para as alterações fazerem efeito é necessario reiniciar o NT !</string>
+    <string name="exitApplication">Click novamente para sair do NT !</string>
+    <string name="adRewardError">Não ha videos para assistir no momento !</string>
+    <string name="rewardTagSlot">Você recebeu mais um slot de tag !</string>
+
+    <!-- Dialogo de adição de data e hora-->
+    <string name="dialog_datetime_title">Insira uma data</string>
+    <string name="dialog_datetime_day">dia</string>
+    <string name="dialog_datetime_month">mês</string>
+    <string name="dialog_datetime_year">ano</string>
+    <string name="dialog_datetime_btn_title">Feito</string>
+    <string name="dialog_datetime_hour">hora</string>
+    <string name="dialog_datetime_minute">min</string>
+    <string name="dialog_datetime_input">Abrir modo dinâmico</string>
+
+    <!-- Dialog de notificações -->
+    <string name="dialog_alarme_title">Suas notificações</string>
+
+    <!-- Dialog de adição de cor -->
+    <string name="dialog_setcolor_title">Selecione uma cor</string>
+    <string name="dialog_list_tag_title">Selecione uma tag</string>
+    <string name="dialog_setanex_title">Selecione uma anotação</string>
+    <string name="dialog_setanex_btn">Criar uma anotação</string>
+
+    <!-- Dialog de adição de alarme -->
+    <string name="dialog_setalarm_title">Quando devo notifica-lo ?</string>
+
+    <!-- Dialog mostrar anexo descrição -->
+    <string name="dialog_showdesc_title">Sua anotação</string>
+
+    <!-- Dialog Preferências de Tag -->
+    <string name="dialog_tagpref_title">Preferências</string>
+    <string name="dialog_tagpref_btn">Salvar</string>
+    <string name="dialog_tagpref_spending">Apenas lembretes pendentes</string>
+    <string name="dialog_tagpref_scalendar">Modo calendário</string>
+
+    <!--Dialog Feedback -->
+    <string name="dialog_feedback_btn">Enviar</string>
+    <string name="feedback_send">Enviar email</string>
+    <string name="dialog_feedback_title">Enviar feedback</string>
+
+    <!-- Dialog Aviso -->
+    <string name="dialog_alert_title">Deseja continuar ?</string>
+    <string name="dialog_alert_message">Suas ações não poderão ser revertidas !</string>
+    <string name="dialog_alert_btn_positive">Sim</string>
+    <string name="dialog_alert_btn_negative">Não</string>
+
+    <!-- Menu Hamburguer items drawable -->
+    <string name="home">Inicio</string>
+    <string name="tags">Minhas Tags</string>
+    <string name="config">Configurações</string>
+    <string name="feedback" translatable="false">Feedback</string>
+    <string name="about">Sobre</string>
+    <string name="paytowin">Ajude-nos</string>
+    <string name="dialog_lang_title">Selecione uma lingua</string>
+    <string name="dialog_lang_br">Português (BR)</string>
+    <string name="dialog_lang_en">Inglês (US)</string>
+
+
+</resources>

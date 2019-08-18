@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NT Schedule</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_title">NT your personal schedule!</string>
+
+    <string name="email" translatable="false">fcoelhodev@gmail.com</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="titleAnotacao">Add Annotation</string>
+
+    <string name="titleLembrete">Add Reminder</string>
+
+    <string name="titleLembreteConfig">Edit Preferences</string>
+
+    <string name="title_activity_anotacoes">Annotations</string>
+
+    <string name="anotação_title_hint">Put some note</string>
+
+    <string name="title_activity_lembrete">Sticky notes</string>
+
+    <string name="lembrete_title_activity">Add Reminder</string>
+
+    <string name="lembrete_btn_arrow_content_desc">Come back</string>
+
+    <string name="lembrete_title_hint">Name (or short bescription)</string>
+
+    <string name="lembrete_tag_hint">Tag</string>
+
+    <string name="lembrete_date_hint">Date</string>
+
+    <string name="lembrete_hora_hint">Hour</string>
+
+    <string name="lembrete_anex_hint">Link an Annotation</string>
+
+    <string name="lembrete_cor_hint">Colors</string>
+
+    <string name="lembrete_alarm_hint">Alarm</string>
+
+    <string name="lembrete_btn_add_edit">Add</string>
+
+    <string name="lembrete_btn_edit">To edit</string>
+
+    <string name="icon_close">Close</string>
+
+    <string name="Inicio_title_list_dynamic">Nearby</string>
+
+    <string name="Inicio_title_total">Total:</string>
+
+    <string name="ini_tab_lembrete">Reminders</string>
+    <string name="ini_tab_anotacao">Notes</string>
+    <string name="ini_tab_calendario">Calendar</string>
+
+    <string name="tags_addtag_title">Add Tag</string>
+
+    <string name="tags_remove_title">Clear all tags</string>
+
+    <string name="tags_slot_title">Rewards</string>
+
+    <string name="tags_slot_desc">Watch some videos and get more space for new tags!</string>
+
+    <string name="tags_slot_btn">Watch</string>
+
+    <string name="tags_slot_btn_full">To help</string>
+
+    <string name="tags_slot__desc_full">You have already received all the rewards! Help us and gain more advantages as thanks</string>
+
+    <string name="frag_sobre_history">Application started in March 2018 with the purpose of helping your day-to-day tasks. Focused on giving a quick, practical and dynamic accessibility to their tasks that were classified as: reminders and notes, by NT Agenda. We hope we have helped you with this application: D!</string>
+
+    <string name="frag_sobre_versao">Version</string>
+
+    <string name="frag_sobre_contato">Contact</string>
+
+    <string name="config_stiwtch_lembrete">Remove reminders list from \ "Start \"</string>
+
+    <string name="config_stiwtch_lcalendar">Remove reminders calendar from \ "Start \"</string>
+
+    <string name="config_stiwtch_note">Remove Reminder notes from \ "Start \"</string>
+
+    <string name="config_reset_db">Reset NT</string>
+
+    <string name="config_custom_ini_title">Customize Start</string>
+
+    <string name="config_data_title">Delete data</string>
+
+    <string name="config_data_old_lembretes">Delete my old reminders</string>
+
+    <string name="config_data_note">Delete my notes</string>
+
+    <string name="help_title">Help the NT grow!</string>
+
+    <string name="help_desc">Help us keep the NT better and better: D. Make a donation and receive reward as a way of thanking the NT development team!</string>
+
+    <string name="help_desc2">These are the rewards you have earned from the NT team:</string>
+
+    <string name="help_reward_color">Over 200 colors to put in your reminders and notes.</string>
+
+    <string name="help_reward_query">Add filter your search for reminders and notes.</string>
+
+    <string name="help_reward_tags">Add colors as a filter in \ "My Tags \" instead of just tags.</string>
+
+    <string name="help_reward_more">And much more!</string>
+
+    <string name="help_btn">Take rewards</string>
+
+    <string name="noResultCalendar">No reminder was found for this day.</string>
+
+    <string name="erroAnexoNulo">There are no attachments here!</string>
+
+    <string name="erroCampoNulo">Enter more information!</string>
+
+    <string name="erroMaxTags">You have reached the maximum number of created tags!</string>
+
+    <string name="reloadApp">For the changes to take effect it is necessary to restart the NT!</string>
+
+    <string name="exitApplication">Click again to exit the NT!</string>
+
+    <string name="adRewardError">There are no videos to watch right now!</string>
+
+    <string name="rewardTagSlot">You got one more tag slot!</string>
+
+    <string name="dialog_datetime_title">Enter a date</string>
+
+    <string name="dialog_datetime_day">day</string>
+
+    <string name="dialog_datetime_month">month</string>
+
+    <string name="dialog_datetime_year">year</string>
+
+    <string name="dialog_datetime_btn_title">Done</string>
+
+    <string name="dialog_datetime_hour">hour</string>
+
+    <string name="dialog_datetime_minute">min</string>
+
+    <string name="dialog_datetime_input">Open dynamic mode</string>
+
+    <string name="dialog_alarme_title">Your notifications</string>
+
+    <string name="dialog_setcolor_title">Select a color</string>
+
+    <string name="dialog_list_tag_title">Select a tag</string>
+
+    <string name="dialog_setanex_title">Select an annotation</string>
+
+    <string name="dialog_setanex_btn">Create a note</string>
+
+    <string name="dialog_setalarm_title">When should I notify you?</string>
+
+    <string name="dialog_showdesc_title">Your note</string>
+
+    <string name="dialog_tagpref_title">Preferences</string>
+
+    <string name="dialog_tagpref_btn">To save</string>
+
+    <string name="dialog_tagpref_spending">Pending reminders only</string>
+
+    <string name="dialog_tagpref_scalendar">Calendar Mode</string>
+
+    <string name="dialog_feedback_btn">Submit</string>
+
+    <string name="feedback_send">Send email</string>
+
+    <string name="dialog_feedback_title">Send feedback</string>
+
+    <string name="dialog_alert_title">Do you wish to continue ?</string>
+
+    <string name="dialog_alert_message">Your actions can not be reversed!</string>
+
+    <string name="dialog_alert_btn_positive">Yes</string>
+
+    <string name="dialog_alert_btn_negative">Not</string>
+
+    <string name="home">Start</string>
+
+    <string name="tags">My Tags</string>
+
+    <string name="config">settings</string>
+
+    <string name="feedback" translatable="false">Feedback</string>
+
+    <string name="about">About</string>
+
+    <string name="paytowin">Help us</string>
+</resources>

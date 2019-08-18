@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundDefault"
+    tools:context=".InputDados.ActivityAnotacoes">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/BackgroundDestaque">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/note_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_arrow_left" />
+
+            <TextView
+                android:id="@+id/lembrete_activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp "
+                android:text="@string/titleAnotacao"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/note_btn_insertColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/icon_pallete_black" />
+
+            <ImageView
+                android:id="@+id/note_trash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/icon_trash_black" />
+
+            <ImageView
+                android:id="@+id/note_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_check_black" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout">
+
+        <EditText
+            android:id="@+id/note_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color00"
+            android:gravity="left"
+            android:hint="@string/anotação_title_hint"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/textHint"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteY="56dp" />
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
